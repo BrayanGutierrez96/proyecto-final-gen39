@@ -1,12 +1,92 @@
-# React + Vite
+## 🛒 ECOMMERCE DEV.F - GENERACIÓN 39
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+¡Bienvenido al proyecto final de la Generación 39 de DEV.F! 🚀
+Este repositorio contiene el código fuente de nuestra tienda online creada con 💻 SCRUM y 🟣 Git Flow como metodologías principales para una experiencia colaborativa real.
 
-Currently, two official plugins are available:
+##### 📌 Descripción del Proyecto
+Este proyecto es una plataforma de comercio electrónico moderna donde los usuarios podrán:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+📦 Visualizar productos organizados por categorías 
 
-## Expanding the ESLint configuration
+❤️ Agregar productos a favoritos o carrito de compras
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+💳 Simular un proceso de pago
+
+📝 Autenticarse mediante un sistema de login y registro
+
+🎨 Disfrutar de una experiencia de usuario responsiva y atractiva
+
+Todo el proyecto se desarrollará en equipo aplicando buenas prácticas de metodología ágil y control de versiones profesional con Git Flow.
+
+🛠️ Tecnologías utilizadas
+Frontend: ReactJS + TailwindCSS
+
+Control de versiones: Git + Git Flow
+
+Metodología de trabajo: SCRUM con sprints semanales
+
+Herramientas de gestión: Trello
+
+🚦 Git Flow - Flujo de trabajo
+Rama	Descripción
+main	Rama principal: despliegues finales
+develop	Rama de integración: se agrupan las funcionalidades listas
+feature/nombre	Ramas para desarrollo de funcionalidades específicas
+release/versión	Ramas para preparar versiones productivas
+hotfix/	Ramas para arreglos rápidos en producción
+
+📌 Reglas básicas:
+Todo cambio comienza en una rama feature/.
+
+Pull Requests se hacen hacia develop.
+
+Releases se fusionan a main y develop.
+
+¡Prohibido trabajar directamente en main o develop!
+
+🧩 Estructura SCRUM
+Product Owner: DEV.F
+
+Scrum Master: Sensei Brayan
+
+Equipo de desarrollo: 
+- Benjamín Arroyo Peralta
+- Abraham Urbina Ziat
+- Gustavo Pozos
+- Manuel Moreno Peña
+- Daniel Ordaz
+
+🎯 Cada sprint tiene una duración de 7 días, con las siguientes ceremonias:
+
+Sprint Planning
+
+Daily Scrum
+
+Sprint Review
+
+Sprint Retrospective
+
+🚀 Cómo iniciar el proyecto
+```
+# Clonar el repositorio
+git clone https://github.com/BrayanGutierrez96/proyecto-final-gen39.git
+
+# Instalar dependencias del frontend
+cd frontend
+npm install
+
+# Correr el frontend
+npm run dev
+
+```
+👥 Contribución
+✅ Crea un fork de este repositorio
+✅ Crea tu rama feature/nombre-funcionalidad
+✅ ¡Desarrolla, documenta y crea un pull request hacia develop!
+
+Todo aporte es bienvenido 🎉
+
+📄 Licencia
+Este proyecto es de uso educativo con fines de aprendizaje dentro de DEV.F.
+
+🚨 Nota importante: ¡Este proyecto refleja nuestro trabajo en equipo, así que colabora, comunica y diviértete aprendiendo!
