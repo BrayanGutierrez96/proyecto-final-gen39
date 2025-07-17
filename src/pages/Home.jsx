@@ -1,6 +1,6 @@
 
 import Navbar from '../components/navbar/Navbar'
-import Beneficios from '../components/Beneficios/Beneficios'  
+import {Beneficios} from '../components/Beneficios/Beneficios'  
 
 function Home() {
   return (
