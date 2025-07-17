@@ -6,9 +6,8 @@ function Home() {
   return (
     <main>
         <Navbar />
-        <Beneficios />
         <h1>Home</h1>
-        
+        <Beneficios />
     </main>
   )
 }
