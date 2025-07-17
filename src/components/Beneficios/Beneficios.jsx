@@ -18,29 +18,6 @@ export const Beneficios = () => {
 }
 
 
-
-
-
-// import React from 'react';
-// import { ServiciosCustomer } from "./components/ServiciosCustomers/ServiciosCustomer";
-// import { ServiciosFast } from "./components/ServiciosFast/ServiciosFast";
-// import { ServiciosMoneyBack } from "./components/ServiciosMoneyBack/ServiciosMoneyBack";
-
-// const Beneficios = () => {
-//   return (
-//     <div
-//       className="inline-flex items-center justify-center gap-[88px] relative"
-//       data-model-id="1:64"
-//     >
-//       <ServiciosFast className="!flex-[0_0_auto]" />
-//       <ServiciosCustomer />
-//       <ServiciosMoneyBack className="!flex-[0_0_auto]" />
-//     </div>
-//   )
-// }
-
-// export default Beneficios;
-
 // const BeneficiosLinks = () => {
 //   return (
 //     <div className="py-16 px-4 bg-gray-50">
