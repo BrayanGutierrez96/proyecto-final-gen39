@@ -3,12 +3,12 @@ import { FaHeart, FaShoppingCart, FaUser } from 'react-icons/fa';
 import { Link, NavLink, useNavigate } from 'react-router-dom';
 
 export default function Navbar() {
-  const [search, setSearch] = useState('');
+  const [query, setQuery] = useState('');
   const navigate = useNavigate();
 
-  const handleSearch = (e) => {
-    if (e.key === 'Enter' && search.trim() !== '') {
-      navigate(`/search?query=${encodeURIComponent(search.trim())}`);
+  const handleSearchKeyDown = (e) => {
+    if (e.key === 'Enter' && query.trim() !== '') {
+      navigate(`/search?q=${encodeURIComponent(query.trim())}`);
     }
   };
 
@@ -23,33 +23,25 @@ export default function Navbar() {
         <nav className="flex gap-8">
           <NavLink
             to="/"
-            className={({ isActive }) =>
-              isActive ? 'font-semibold underline' : ''
-            }
+            className={({ isActive }) => isActive ? 'font-semibold underline' : ''}
           >
             Home
           </NavLink>
           <NavLink
             to="/contact"
-            className={({ isActive }) =>
-              isActive ? 'font-semibold underline' : ''
-            }
+            className={({ isActive }) => isActive ? 'font-semibold underline' : ''}
           >
             Contact
           </NavLink>
           <NavLink
             to="/about"
-            className={({ isActive }) =>
-              isActive ? 'font-semibold underline' : ''
-            }
+            className={({ isActive }) => isActive ? 'font-semibold underline' : ''}
           >
             About
           </NavLink>
           <NavLink
             to="/signup"
-            className={({ isActive }) =>
-              isActive ? 'font-semibold underline' : ''
-            }
+            className={({ isActive }) => isActive ? 'font-semibold underline' : ''}
           >
             Sign Up
           </NavLink>
@@ -58,11 +50,11 @@ export default function Navbar() {
         <div className="flex items-center gap-4">
           <input
             type="text"
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            onKeyDown={handleSearchKeyDown}
             placeholder="What are you looking for?"
-            className="border px-3 py-1 rounded-full text-sm w-64 focus:outline-none focus:ring-2 focus:ring-black"
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-            onKeyDown={handleSearch}
+            className="border px-3 py-1 rounded-full text-sm w-64"
           />
           <FaUser className="text-lg cursor-pointer" />
           <FaHeart className="text-lg cursor-pointer" />
