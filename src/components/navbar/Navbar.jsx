@@ -1,26 +1,33 @@
-import React from 'react'
+import { FaHeart, FaShoppingCart, FaUser } from 'react-icons/fa';
+import { Link, NavLink } from 'react-router-dom';
 
-function Navbar() {
+export default function Navbar() {
   return (
-     <nav className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4 pb-6  border-b-2 border-gray-400/60">
-      <h1 className="flex items-center justify-center font-bold text-xl">Exclusive</h1> 
-      <ul className="flex justify-between ">
-        <li className="flex items-center"><a className="flex align-middle" href="#">Home</a></li>
-        <li className="flex items-center"><a className="flex align-middle" href="#">Contact</a></li>
-        <li className="flex items-center"><a className="flex align-middle" href="#">About</a></li>
-        <li className="flex items-center"><a className="flex align-middle" href="#">Sing up</a></li>
-      </ul>
-      <div className="flex justify-center  ">
-        <input className="w-[70%] border-1 border-r-0 rounded-sm"  type="text" placeholder="What are you looking for?" />
-        <button className="hover:cursor-pointer border-1 rounded-sm p-1">🔍</button>
+    <header className="bg-white border-b">
+      <div className="text-center text-sm bg-black text-white py-1">
+        Summer Sale For All Swim Suits And Free Express Delivery — OFF 50%! <span className="font-bold">ShopNow</span>
       </div>
-      <div className="flex justify-evenly">
-        <button>💖</button>
-        <button>🛒</button>
-        <button>👤</button>
-      </div>
-    </nav>
-  )
-}
+      <div className="flex items-center justify-between px-10 py-4">
+        <Link to="/" className="text-2xl font-bold">Exclusive</Link>
 
-export default Navbar
+        <nav className="flex gap-8">
+          <NavLink to="/" className={({ isActive }) => isActive ? 'font-semibold underline' : ''}>Home</NavLink>
+          <NavLink to="/contact">Contact</NavLink>
+          <NavLink to="/about">About</NavLink>
+          <NavLink to="/signup">Sign Up</NavLink>
+        </nav>
+
+        <div className="flex items-center gap-4">
+          <input
+            type="text"
+            placeholder="What are you looking for?"
+            className="border px-3 py-1 rounded-full text-sm w-64"
+          />
+          <FaUser className="text-lg cursor-pointer" />
+          <FaHeart className="text-lg cursor-pointer" />
+          <FaShoppingCart className="text-lg cursor-pointer" />
+        </div>
+      </div>
+    </header>
+  );
+}
