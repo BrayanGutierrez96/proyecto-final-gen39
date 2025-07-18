@@ -1,11 +1,11 @@
 import { Routes, Route } from 'react-router-dom'
-import Navbar from './components/Navbar'
-import Sidebar from './components/Sidebar'
+import Navbar from './components/navbar/Navbar.jsx'
+import Sidebar from './components/Sidebar.jsx'
 
 import Home from './pages/Home'
-import Contact from './pages/Contact'
-import About from './pages/About'
-import SignUp from './pages/SignUp'
+import Contact from './pages/Contact.jsx'
+import About from './pages/About.jsx'
+import SignUp from './pages/SignUp.jsx'
 
 export default function App() {
   return (

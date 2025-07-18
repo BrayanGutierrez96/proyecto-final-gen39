@@ -7,7 +7,7 @@ import {Beneficios} from '../components/Beneficios/Beneficios'
 function Home() {
   return (
     <main>
-        <Navbar />
+        
         <Categories />
         <Beneficios />
     </main>
