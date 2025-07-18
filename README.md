@@ -55,6 +55,7 @@ Equipo de desarrollo:
 - Gustavo Pozos
 - Manuel Moreno Peña
 - Daniel Ordaz
+- Cristal Villon
 
 🎯 Cada sprint tiene una duración de 7 días, con las siguientes ceremonias:
 
