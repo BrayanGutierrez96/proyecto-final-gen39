@@ -4,7 +4,7 @@ import shieldImage from '/src/assets/shield.png';
 export const ServiciosMoneyBack = ({ className }) => {
     return (
         <div className={`flex flex-col items-center text-center space-y-4 ${className}`}>
-            {/* Icon container */}
+            {/* Icon container para el Escudo con marca de verificación */}
            <div className="w-16 h-16 bg-gray-300 rounded-full flex items-center justify-center relative">
   <div className="absolute w-12 h-12 rounded-full bg-black z-10"></div>
   <img 
