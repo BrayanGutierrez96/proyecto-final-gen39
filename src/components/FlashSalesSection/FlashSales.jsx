@@ -173,7 +173,7 @@ import { Heart, Eye, ChevronLeft, ChevronRight} from 'lucide-react';
                         onClick={nextProducts}
                         className="p-2 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors"
                     >
-                        <ChevronLeft className="w-5 h-5" />
+                        <ChevronRight className="w-5 h-5" />
                     </button>
                 </div>
            
@@ -215,7 +215,7 @@ import { Heart, Eye, ChevronLeft, ChevronRight} from 'lucide-react';
                              {/* Add to Cart Button - appears on hover */}
                                 <div className="absolute bottom-0 left-0 right-0 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
                                     <button className="w-full bg-black text-white py-3 font-medium hover:bg-gray-800 transition-colors">
-                                    Add To Cart
+                                        Añadir al Carrito
                                     </button>
                                 </div>
 
