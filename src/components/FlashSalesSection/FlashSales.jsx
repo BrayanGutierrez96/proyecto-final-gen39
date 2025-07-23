@@ -22,7 +22,7 @@ import { Heart, Eye, ChevronLeft, ChevronRight} from 'lucide-react';
             discount: 10,
             rating: 4.9,
             reviews: 120,
-            image:  "/api/placeholder/200/200"
+            image:  "https://i.imgur.com/lHOuyDc.jpeg"
         },
         {
             id:2,
@@ -32,7 +32,7 @@ import { Heart, Eye, ChevronLeft, ChevronRight} from 'lucide-react';
             discount: 10,
             rating: 4.6,
             reviews: 15,
-            image: "/api/placeholder/200/200"
+            image: "https://i.imgur.com/vwCBJsK.jpeg"
         },
         {
             id:3,
@@ -42,7 +42,7 @@ import { Heart, Eye, ChevronLeft, ChevronRight} from 'lucide-react';
             discount: 50,
             rating: 4.2,
             reviews: 89,
-            image: "/api/placeholder/200/200"
+            image: "https://i.imgur.com/Cu8mlkh.jpeg"
         },
         {
             id:4,
@@ -52,7 +52,7 @@ import { Heart, Eye, ChevronLeft, ChevronRight} from 'lucide-react';
             discount: 25,
             rating: 4.9,
             reviews: 4,
-            image: "/api/placeholder/200/200"
+            image: "https://i.imgur.com/M76k5OT.jpeg"
         },
         {
             id:5,
@@ -62,7 +62,7 @@ import { Heart, Eye, ChevronLeft, ChevronRight} from 'lucide-react';
             discount: 24,
             rating: 4.6,
             reviews: 13,
-            image: "/api/placeholder/200/200"
+            image: "https://i.imgur.com/IUrbxFM.jpeg"
         }
     ];
 
@@ -177,7 +177,7 @@ import { Heart, Eye, ChevronLeft, ChevronRight} from 'lucide-react';
                     </button>
                 </div>
            
-            </div> // FIN DE Title and Countdown
+            </div> 
 
             {/* Products Grid */}
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8'>
@@ -208,9 +208,11 @@ import { Heart, Eye, ChevronLeft, ChevronRight} from 'lucide-react';
                             </div>
 
                             {/* Product Image Placeholder */}
-                            <div className='w-32 h-32 bg-gray-300 rounded-lg flex items-center justify-center'>
-                                <span className='text-gray-600 text-sm'>Imagen de Producto</span>
-                            </div>
+                           <img 
+                                src={product.image} 
+                                alt={product.name}
+                                className="w-40 h-40 object-cover rounded-lg"
+                            />
 
                              {/* Add to Cart Button - appears on hover */}
                                 <div className="absolute bottom-0 left-0 right-0 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
@@ -219,11 +221,11 @@ import { Heart, Eye, ChevronLeft, ChevronRight} from 'lucide-react';
                                     </button>
                                 </div>
 
-                        </div>/* -----FIN Product Image Container ------*/
+                        </div>
 
                         {/* Product Info */}
                         <div className='p-4'>
-                            <h3 className='font-medium text-gray-900 mb-2'>product.name</h3>
+                            <h3 className='font-medium text-gray-900 mb-2'>{product.name}</h3>
                             
                             {/* Pricing */}
                             <div className='flex items-center gap-2 mb-2'>
