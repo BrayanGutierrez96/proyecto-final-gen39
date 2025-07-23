@@ -28,7 +28,7 @@ function Banner() {
         <img
           className="imagen-iphone14"
           src="/iconos2/iphone14.png"
-          alt="iPhone14"
+          alt="iphone14"
         />
       </div>
       <div className="col-span-2 flex justify-center gap-4">
