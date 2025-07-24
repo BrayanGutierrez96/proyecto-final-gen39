@@ -3,8 +3,7 @@ import './JBLCard.css';
 import jblImage from '../assets/jbl.png'; // Ajusta ruta según tu estructura
 
 const JBLCard = () => {
-  // Fecha límite para la oferta (1 hora desde que se carga el componente)
-  const [timeLeft, setTimeLeft] = useState(3600); // segundos
+  const [timeLeft, setTimeLeft] = useState(3600); // 1 hora en segundos
 
   useEffect(() => {
     if (timeLeft <= 0) return;
@@ -16,7 +15,7 @@ const JBLCard = () => {
     return () => clearInterval(timerId);
   }, [timeLeft]);
 
-  // Función para formatear el tiempo en hh:mm:ss
+  //  Formato hh:mm:ss
   const formatTime = (seconds) => {
     const h = Math.floor(seconds / 3600);
     const m = Math.floor((seconds % 3600) / 60);
@@ -24,8 +23,10 @@ const JBLCard = () => {
     return `${h.toString().padStart(2, '0')}:${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
   };
 
+  //  Redirección al producto
   const handleBuyNow = () => {
-    alert('Producto agregado al carrito');
+    // alert('Producto agregado al carrito'); // Puedes dejar esto si quieres
+    window.location.href = '';
   };
 
   return (
@@ -35,7 +36,10 @@ const JBLCard = () => {
         <h2 className="jbl-title">JBL Flip 6</h2>
         <p className="jbl-category">Altavoz Bluetooth</p>
         <p className="jbl-timer">
-          Oferta termina en: <span id="jbl-timer">{timeLeft > 0 ? formatTime(timeLeft) : '¡Oferta finalizada!'}</span>
+          Oferta termina en:{' '}
+          <span id="jbl-timer">
+            {timeLeft > 0 ? formatTime(timeLeft) : '¡Oferta finalizada!'}
+          </span>
         </p>
         <button
           className="jbl-button"
