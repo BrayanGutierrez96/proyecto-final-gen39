@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './JBLCard.css';
-import jblImage from '../assets/jbl.png'; // Ajusta ruta según tu estructura
+import jblImage from '../assets/jbl.png';
 
 const JBLCard = () => {
-  const [timeLeft, setTimeLeft] = useState(3600); // 1 hora en segundos
+  const [timeLeft, setTimeLeft] = useState(3600);
 
   useEffect(() => {
     if (timeLeft <= 0) return;
@@ -14,18 +14,17 @@ const JBLCard = () => {
 
     return () => clearInterval(timerId);
   }, [timeLeft]);
+const formatTime = (seconds) => {
+  const d = Math.floor(seconds / (3600 * 24));
+  const h = Math.floor((seconds % (3600 * 24)) / 3600);
+  const m = Math.floor((seconds % 3600) / 60);
+  const s = seconds % 60;
 
-  //  Formato hh:mm:ss
-  const formatTime = (seconds) => {
-    const h = Math.floor(seconds / 3600);
-    const m = Math.floor((seconds % 3600) / 60);
-    const s = seconds % 60;
-    return `${h.toString().padStart(2, '0')}:${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
-  };
+  const daysText = d > 0 ? `${d}d ` : '';
+  return `${daysText}${h.toString().padStart(2, '0')}h ${m.toString().padStart(2, '0')}m ${s.toString().padStart(2, '0')}s`;
+};
 
-  //  Redirección al producto
   const handleBuyNow = () => {
-    // alert('Producto agregado al carrito'); // Puedes dejar esto si quieres
     window.location.href = '';
   };
 
@@ -33,7 +32,7 @@ const JBLCard = () => {
     <div className="jbl-card">
       <img src={jblImage} alt="JBL Speaker" className="jbl-image" />
       <div className="jbl-info">
-        <h2 className="jbl-title">JBL Flip 6</h2>
+        <h2 className="jbl-title">JBL Flip</h2>
         <p className="jbl-category">Altavoz Bluetooth</p>
         <p className="jbl-timer">
           Oferta termina en:{' '}
