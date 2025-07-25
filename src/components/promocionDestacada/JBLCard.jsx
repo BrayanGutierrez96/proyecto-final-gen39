@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import './JBLCard.css';
 import jblImage from '../../assets/jbl.png';
+import { useNavigate } from 'react-router-dom';
 
 const JBLCard = () => {
   const [timeLeft, setTimeLeft] = useState(3600);
+  const navigate = useNavigate();
 
   useEffect(() => {
     if (timeLeft <= 0) return;
@@ -25,7 +27,7 @@ const formatTime = (seconds) => {
 };
 
   const handleBuyNow = () => {
-    window.location.href = '';
+    navigate('/')
   };
 
   return (
