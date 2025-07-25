@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './JBLCard.css';
-import jblImage from '../assets/jbl.png';
+import jblImage from '../../assets/jbl.png';
 
 const JBLCard = () => {
   const [timeLeft, setTimeLeft] = useState(3600);

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import jblImage from './assets/jbl.png'; // Ajusta ruta si es otra carpeta
+import jblImage from '../../assets/jbl.png'; // Ajusta ruta si es otra carpeta
 import './JBLCard.css'; // Asegúrate que coincida el nombre
 
 const JBLCard = () => {
