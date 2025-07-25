@@ -35,6 +35,7 @@ function Banner() {
         {[0, 1, 2, 3, 4].map((boton, indice) => {
           return (
             <div
+            key={indice}
               onClick={() => {
                 cambiarColorBotones(indice);
               }}
