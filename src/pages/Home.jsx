@@ -13,8 +13,8 @@ function Home() {
         <Banner/>
         <FlashSalesSection/>
         <Categories />
-        <Beneficios />
         <JBLCard/>
+        <Beneficios />
     </main>
   )
 }
