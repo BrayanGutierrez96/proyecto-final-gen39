@@ -6,8 +6,11 @@ import { ServiciosMoneyBack } from "./components/ServiciosMoneyBack/ServiciosMon
 
 export const Beneficios = () => {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   console.log("Beneficios component is rendering"); // Debug log
   
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
   return (

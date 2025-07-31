@@ -5,7 +5,10 @@ export const ServiciosMoneyBack = ({ className }) => {
     return (
         <div className={`flex flex-col items-center text-center space-y-4 ${className}`}>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
             {/* Icon container */}
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
            <div className="w-16 h-16 bg-gray-300 rounded-full flex items-center justify-center relative">
