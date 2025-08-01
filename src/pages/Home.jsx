@@ -6,7 +6,6 @@ import Banner from '../components/banner/Banner'
 import FlashSalesSection from '../components/FlashSalesSection/FlashSalesSection'
 import JBLCard from '../components/promocionDestacada/JBLCard'
 import SideBar from '../components/sidebar/SideBar'
-import FeaturedNewArrival from '../components/NewArrival/NewArrival'
 
 
 function Home() {
@@ -19,7 +18,6 @@ function Home() {
         <FlashSalesSection/>
         <Categories />
         <JBLCard/>
-        <FeaturedNewArrival />
         <Beneficios />
     </main>
   )

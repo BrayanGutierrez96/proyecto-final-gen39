@@ -1,5 +1,6 @@
 
 import React, { useRef } from 'react'
+import { Link } from 'react-router-dom';
 import './Categories.css'
 
 const Categories = () => {
@@ -46,41 +47,54 @@ const Categories = () => {
               msOverflowStyle: 'none'
             }}
           >
-            <div className='hover:bg-red-500 bg-white border-4 border-gray-400 w-32 h-32 flex-shrink-0 flex flex-col justify-center items-center'>
+            <Link to="/phones"> 
+            <div className='cursor-pointer hover:bg-red-500 bg-white border-4 border-gray-400 w-32 h-32 flex-shrink-0 flex flex-col justify-center items-center'>
               <img src='/iconos2/telefono.png' alt='Teléfono' />
               <p className='m-0 font-medium'>Phones</p>
             </div>
+            </Link>
 
-
-          <div className='hover:bg-red-500 bg-white border-4 border-gray-400 w-32 h-32 flex flex-shrink-0 flex-col justify-center items-center '>
+          <Link to="/computers">
+          <div className='cursor-pointer hover:bg-red-500 bg-white border-4 border-gray-400 w-32 h-32 flex flex-shrink-0 flex-col justify-center items-center '>
             <img src='/iconos2/computadora.png' alt='Laptop' />
             <p>Computers</p>
           </div>
+           </Link>
 
-          <div className='bg-white border-4 border-gray-400 hover:bg-red-500 w-32 h-32 flex flex-shrink-0 flex-col justify-center items-center '>
+          <Link to= "/smarthwatch">  
+          <div className='cursor-pointer bg-white border-4 border-gray-400 hover:bg-red-500 w-32 h-32 flex flex-shrink-0 flex-col justify-center items-center '>
             <img src='/iconos2/smartwatch.png' alt='smartwatch' />
             <p>SmartWatch</p>
           </div>
+          </Link>
 
-          <div className='border-4 border-gray-400 hover:bg-red-500 bg-red-400 text-white w-32 h-32  flex-shrink-0 flex flex-col justify-center items-center'>
+          <Link to= "/camera"> 
+          <div className='cursor-pointer border-4 border-gray-400 hover:bg-red-500 bg-red-400 text-white w-32 h-32  flex-shrink-0 flex flex-col justify-center items-center'>
             <img src='/iconos2/camara.png' alt='Camara' />
             <p>Camera</p>
           </div>
+          </Link>
 
-          <div className='bg-white hover:bg-red-500 border-4 border-gray-400 w-32 h-32 flex-shrink-0  flex flex-col justify-center items-center '>
+          <Link to="/headPhones"> 
+          <div className='cursor-pointer bg-white hover:bg-red-500 border-4 border-gray-400 w-32 h-32 flex-shrink-0  flex flex-col justify-center items-center '>
             <img src='/iconos2/auriculares.png' alt='Audifonos' />
             <p>HeadPhones</p>
           </div>
+          </Link>  
 
+          <Link to="/gaming"> 
           <div className='bg-white hover:bg-red-500 border-4 border-gray-400 w-32 h-32 flex-shrink-0  flex flex-col justify-center items-center '>
             <img src='/iconos2/gaming.png' alt='Audifonos' />
             <p>Gaming</p>
           </div>
+          </Link>  
 
+          <Link to="/tablets">
            <div className='hover:bg-red-500 bg-white border-4 border-gray-400 w-32 h-32 flex-shrink-0 flex flex-col justify-center items-center'>
               <img src='/iconos2/telefono.png' alt='Tablets' />
               <p>Tablets</p>
             </div>
+          </Link>
 
 
 
