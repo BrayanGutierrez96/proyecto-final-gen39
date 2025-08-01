@@ -6,6 +6,13 @@ import Home from './pages/Home'
 import Contact from './pages/Contact.jsx'
 import About from './pages/About.jsx'
 import SignUp from './pages/SignUp.jsx'
+import Camera from './pages/Camera.jsx' 
+import Computers from './pages/Computers.jsx' 
+import Gaming from './pages/Gaming.jsx' 
+import HeadPhones from './pages/HeadPhones.jsx' 
+import Phones from './pages/Phones.jsx' 
+import Tablets from './pages/Tablets.jsx'
+import Smarthwatch from './pages/Smarthwatch.jsx' 
 
 export default function App() {
   return (
@@ -18,6 +25,13 @@ export default function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/about" element={<About />} />
             <Route path="/signup" element={<SignUp />} />
+            <Route path="/camera" element={<Camera />} />
+            <Route path="/computers" element={<Computers />} />
+            <Route path="/gaming" element={<Gaming />} />
+            <Route path="/headPhones" element={<HeadPhones />} />
+            <Route path="/phones" element={<Phones />} />
+            <Route path="/tablets" element={<Tablets />} />
+            <Route path="/smarthwatch" element={<Smarthwatch />} />
           </Routes>
         </main>
       </div>
