@@ -58,32 +58,35 @@ const Footer = () => {
         </div>
 
         {/* Download App + Redes */}
-<div className="flex flex-col items-center sm:items-start">
+<div className="flex flex-col items-center sm:items-start cols-span-2 sm:cols-span-1">
   <h4 className="text-lg font-medium mb-2 text-center sm:text-left">Download App</h4>
   <p className="text-sm mb-4 text-center sm:text-left">Save $3 with App New User Only</p>
 
-  <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4 sm:gap-6">
+  <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4 sm:gap-6 jutify-beteew w-full">
     {/* QR */}
+    <div className='flex md:w-full md:h-full items-center justify-center'>
     <img
       src="/iconos2/Qr1.png"
       alt="QR"
-      className="w-[160px] h-[160px] object-contain"
+      className="object-contain stores qr"
     />
+    </div>
+ 
 
     {/* Botones App */}
-    <div className="flex flex-col gap-2">
+    <div className="flex flex-col gap-1 w-full">
       <a href="https://play.google.com" target="_blank" rel="noopener noreferrer">
         <img
           src="/iconos2/google-play.png"
           alt="Google Play"
-          className="w-[160px] h-[50px] object-contain hover:scale-105 transition-transform"
+          className="object-contain hover:scale-105 transition-transform stores"
         />
       </a>
       <a href="https://www.apple.com/app-store/" target="_blank" rel="noopener noreferrer">
         <img
           src="/iconos2/app-store.png"
           alt="App Store"
-          className="w-[160px] h-[50px] object-contain hover:scale-105 transition-transform"
+          className="object-contain hover:scale-105 transition-transform  stores"
         />
       </a>
     </div>
