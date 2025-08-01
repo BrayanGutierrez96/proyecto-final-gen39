@@ -6,6 +6,9 @@ import Home from './pages/Home'
 import Contact from './pages/Contact.jsx'
 import About from './pages/About.jsx'
 import SignUp from './pages/SignUp.jsx'
+import Footer from './components/Footer/Footer.jsx'
+
+
 
 export default function App() {
   return (
@@ -22,6 +25,7 @@ export default function App() {
           </Routes>
         </main>
       </div>
+      <Footer />
     </div>
   )
 }
