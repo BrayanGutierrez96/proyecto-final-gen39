@@ -4,7 +4,7 @@ import ps5Image from '/src/assets/playstation.png';
 import womenCollectionImage from '/src/assets/girls.png';
 import speakersImage from '/src/assets/echo.png';
 import perfumeImage from '/src/assets/perfume.png';
-
+import './newArrival.css';
 const FeaturedNewArrival = () => {
   return (
     <div className="flex flex-col items-center gap-6 md:gap-10 lg:gap-15 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 md:py-8 lg:py-10">
@@ -30,7 +30,7 @@ const FeaturedNewArrival = () => {
           <img 
             src={ps5Image} 
             alt="PlayStation 5" 
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover imagen"
           />
           <div className="absolute left-4 sm:left-6 md:left-8 bottom-4 sm:bottom-6 md:bottom-8 w-48 sm:w-52 md:w-60">
             <div className="flex flex-col items-start gap-2 sm:gap-3 md:gap-4">
@@ -58,7 +58,7 @@ const FeaturedNewArrival = () => {
             <img 
               src={womenCollectionImage} 
               alt="Women's Collections" 
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover imagen"
             />
             <div className="absolute left-4 sm:left-6 bottom-4 sm:bottom-6 md:bottom-8 w-48 sm:w-52 md:w-64">
               <div className="flex flex-col items-start gap-2 sm:gap-3 md:gap-4">
@@ -89,7 +89,7 @@ const FeaturedNewArrival = () => {
                 <img 
                   src={speakersImage} 
                   alt="Amazon Wireless Speakers" 
-                  className="w-full h-full object-contain"
+                  className="w-full h-full object-contain imagen"
                 />
               </div>
               <div className="absolute left-4 sm:left-6 bottom-4 sm:bottom-6 md:bottom-8 w-40 sm:w-44 md:w-52 lg:w-60">
@@ -117,14 +117,14 @@ const FeaturedNewArrival = () => {
                 <img 
                   src={perfumeImage} 
                   alt="GUCCI INTENSE OUD EDP" 
-                  className="w-full h-full object-cover opacity-60"
+                  className="w-full h-full object-cover opacity-60 imagen"
                 />
               </div>
               <div className="absolute w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-[196px] lg:h-[196px] left-1/2 top-4 sm:top-6 md:top-8 lg:top-11 transform -translate-x-1/2 z-10">
                 <img 
                   src={perfumeImage} 
                   alt="GUCCI INTENSE OUD EDP" 
-                  className="w-full h-full object-contain"
+                  className="w-full h-full object-contain imagen"
                 />
               </div>
               <div className="absolute left-4 sm:left-6 bottom-4 sm:bottom-6 md:bottom-8 w-40 sm:w-44 md:w-52 lg:w-60 z-10">
