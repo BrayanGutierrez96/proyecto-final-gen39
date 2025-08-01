@@ -1,0 +1,14 @@
+.stores{
+    object-fit: contain;
+    width: 100%;
+}
+.qr{
+    width: 100%;
+    height: 100%;
+}
+
+@media(max-width:650px ){
+    .qr{
+        width: 20%!important;
+    }
+}
