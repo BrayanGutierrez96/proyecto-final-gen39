@@ -1,0 +1,71 @@
+.jbl-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: radial-gradient(circle at center, #1c1c1c, #000000);
+  padding: 2rem 3rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);
+  color: white;
+  max-width: 1000px;
+  margin: 3rem auto;
+}
+
+.jbl-image {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.6));
+}
+
+.jbl-info {
+  max-width: 50%;
+}
+
+.jbl-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.jbl-category {
+  color: #ff0022;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.jbl-timer {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+#jbl-timer {
+  font-family: 'Courier New', monospace;
+  color: #ffffff;
+  background-color: #111;
+  padding: 0.4rem 0.8rem;
+  border-radius: 10px;
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
+.jbl-button {
+  background-color: #f81414;
+  color: #000;
+  font-weight: 700;
+  font-size: 1rem;
+  border: none;
+  padding: 0.8rem 1.6rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.jbl-button:hover {
+  background-color: #02f182;
+}
+
+.jbl-button:disabled {
+  background-color: #555;
+  cursor: not-allowed;
+}
