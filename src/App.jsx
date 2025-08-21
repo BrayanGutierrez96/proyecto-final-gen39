@@ -13,6 +13,7 @@ import Tablets from './pages/Tablets.jsx'
 import Smarthwatch from './pages/Smarthwatch.jsx' 
 import Footer from './components/Footer/Footer.jsx'
 
+
 export default function App() {
   return (
     <div className="flex flex-col min-h-screen">
